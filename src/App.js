@@ -1,13 +1,21 @@
 import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
+
+import Main from './Pages/Main/Main'
+
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>My react app</h1>
-      <h2>Author: "Jun Jeong"</h2>
-      
-    </div>
+    <Router>
+      <Routes>
+        
+        <Route path ="/" element={<Main/>}>
+        </Route>
+      </Routes>
+    </Router>
+    
   );
 }
 
