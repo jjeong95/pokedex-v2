@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         
-        <Route path ="/" element={<Main/>}>
+        <Route path ="/hello" element={<Main/>}>
         </Route>
       </Routes>
     </Router>
